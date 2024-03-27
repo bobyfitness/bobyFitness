@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./mercy.js" defer></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <form method="post" action="" class='' id="theForm">
+
+    <div class="row margin-bottom-5">
+      <div class="phone-6 columns form-holder">
+        <label>First Name:</label>
+      </div>
+
+      <div class="phone-6 columns form-holder">
+        <label>Last Name:</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="phone-6 columns form-holder">
+        <input class="form-control  required" name="firstName" placeholder="First Name*" title="First Name" type="text"
+          value="" id="nmae" data-error-message="Please enter your first name!">
+      </div>
+
+
+
+
+      <div class="phone-6 columns form-holder">
+        <input class="form-control required" name="lastName" placeholder="Last Name*" title="Last Name" type="text"
+          value="" id="Lastname" data-error-message="Please enter your last name!">
+      </div>
+    </div>
+
+    <div class=" margin-bottom-5">
+      <div class="phone-12 columns form-holder">
+        <label>Address:</label>
+      </div>
+    </div>
+
+    <div class="phone-12 columns form-holder">
+      <input class="form-control required" name="shippingAddress1" placeholder="Address*" title="Address" type="text"
+        value="" id="Address" data-error-message="Please enter your address!">
+    </div>
+
+    <div class=" margin-bottom-5 form-holder">
+      <div class="phone-12 columns">
+        <label>Zip Code:</label>
+      </div>
+    </div>
+
+    <div class="phone-12 columns form-holder">
+      <input class="form-control required" name="shippingZip" placeholder="Zip Code*" title="Zip Code" type="tel"
+        minlength="5" maxlength="5" value="" oninput="javascript: this.value = this.value.replace(/[^0-9]/g, '');"
+        data-error-message="Please enter a valid zip code!">
+    </div>
+
+    <div class=" margin-bottom-5 form-holder">
+      <div class="phone-12 columns">
+        <label>City:</label>
+      </div>
+    </div>
+
+    <div class="phone-12 columns form-holder">
+      <input class="form-control required" name="shippingAddress1" placeholder="Country*" title="Address" type="text"
+        value="" id="countyr" data-error-message="Please enter your Country!">
+    </div>
+
+    <div class="phone-12 columns form-holder">
+      <label>State:</label>
+      <input type="text" name="shippingState" class='form-control required' data-field='state' data-group='1'
+        id='shippingState' data-default='' data-error-message="Please select your state!" />
+    </div>
+
+    <div class="phone-12 columns form-holder">
+      <label>City:</label>
+      <input class="form-control required" name="shippingCity" placeholder="City*" id="City" title="City" type="text"
+        value="" data-error-message="Please enter your city!">
+    </div>
+
+    <div class="row margin-bottom-5">
+      <div class="phone-6 columns form-holder">
+        <label>Email:</label>
+      </div>
+
+      <div class="phone-6 columns form-holder">
+        <label>Phone:</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="phone-6 columns form-holder">
+        <input class="form-control required" name="email" placeholder="Email*" title="Email" type="email" value=""
+          id="email" data-error-message="Please enter a valid email id!">
+      </div>
+
+      <div class="phone-6 columns form-holder">
+        <input class="form-control required" id="phone" name="phone" placeholder="Phone Number*" title="Phone Number"
+          type="tel" value="" maxlength="10" data-error-message="Please enter a valid contact number!"
+          oninput="javascript: this.value = this.value.replace(/[^0-9]/g, '');">
+      </div>
+    </div>
+
+    <button class=" loading-btn " id="sent" type="button">RUSH MY
+      ORDER</button>
+  </form>
+
+</body>
+
+</html>
