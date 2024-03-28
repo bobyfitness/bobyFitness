@@ -1,6 +1,13 @@
+.small_form{
+  display: none;
+}
+
+
+
+
 @media screen and (max-width: 746px) {
 
-.header__info,.custom-notification,.form-scroll-position,.first-section__bottle,.off{
+.header__info,.custom-notification,.first-section__bottle,.off{
   display: none ;
   width: 100%;
 }
@@ -9,6 +16,52 @@
   width: 100%;
 
 }
+.error2{
+	text-align: center;
+	font-size: 15px;
+	font-weight: 900;
+	color: red;
+	padding-bottom: 10px;
+	display: none;
+}
+
+.small_form{
+display: flex;
+width: 100%;
+justify-content: center;
+
+}.first-section__sid{
+  padding-top: 22%;
+  padding-bottom: 5%;
+
+  width: 89%;
+}.form-title{
+  font-size: 19px;
+  width: 100%;
+}#theForm{
+width: 100%;
+}
+.set{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}.now_on_form{
+  width: 100%;
+}
+.input2{
+  max-width: 100%;
+}
+.loading-btn{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20%;
+}
+
+
+
+
 .header__warning{
   display: flex;
   align-items: center;
@@ -30,13 +83,14 @@ width: 100%;}
   justify-content: center;
   height: 41px;
   padding-top: 10px;
-
 }
 .button_hold{
   position: relative;
 display:flex;
 justify-content: center;
 width: 100%;
+display: none;
+
 
 }
 .button_hold .header__btn{

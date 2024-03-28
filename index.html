@@ -53,24 +53,25 @@
 
                 <div class="container centee_hd  row">
                     <div class="hold_it">
-                    <p class="shopName">Boby Fitness</p>
-                    <img alt="" class="header__logo" src="app/desktop/images/logo-white-2.png" height="68"></div>
+                        <p class="shopName">Boby Fitness</p>
+                        <img alt="" class="header__logo" src="app/desktop/images/logo-white-2.png" height="68">
+                    </div>
                     <div class="header__info row">
                         <div class="header__info_side">
                             <span>Get My Free Bottle!</span>
-                            <p ><span>Voted #1</span> Keto Boost ACV Keto Gummies Product in USA</p>
+                            <p><span>Voted #1</span> Keto Boost ACV Keto Gummies Product in USA</p>
                         </div>
-                        <a class="header__btn heartbeat" href="javascript:void(0);" onclick="scrollToTop();">RUSH MY
+                        <a class="header__btn heartbeat" id="header__btn"  href="javascript:void(0);" onclick="scrollToTop();">RUSH MY
                             ORDER</a>
                     </div>
                 </div>
             </header>
-<div class="button_hold">
-    <a class="header__btn heartbeat" href="javascript:void(0);" onclick="scrollToTop();">RUSH MY
-        ORDER Now</a>
+            <div class="button_hold" id="button_hold">
+                <a class="header__btn heartbeat" href="javascript:void(0);" onclick="Top();">RUSH MY
+                    ORDER Now</a>
 
-</div>
-            <section class="first-section" id="form1">
+            </div>
+            <section class="first-section off" id="form1">
                 <div class="container">
                     <div class="row first_set_well">
                         <div class="first-section__side first-section__info">
@@ -200,13 +201,131 @@
                                             oninput="javascript: this.value = this.value.replace(/[^0-9]/g, '');">
                                     </div>
                                 </div>
-<p class="error">Fill All inputs</p>
-                                <button class=" loading-btn " id="sent" type="button">RUSH MY2
+                                <p class="error">Fill All inputs</p>
+                                <button class=" loading-btn " id="sent" type="button">RUSH MY
                                     ORDER</button>
                             </form>
                         </div>
                     </div>
                 </div>
+
+            </section>
+            <section  class="small_form " id="small_form">
+                <div class="first-section__sid ">
+                    <h2 class="form-title">
+                        <span>STEP 1</span> - TELL US WHERE TO SEND YOUR BOTTLE
+                    </h2>
+
+                    <form method="post" action="" class='' id="theForm2">
+
+                        <div class="row margin-bottom-5">
+                            <div class="phone-6 columns form-holder">
+                                <label>First Name:</label>
+                            </div>
+
+                            <div class="phone-6 columns form-holder">
+                                <label>Last Name:</label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="phone-6 columns form-holder">
+                                <input class="form-control  required" name="firstName" placeholder="First Name*"
+                                    title="First Name" type="text" value="" id="nmae2"
+                                    data-error-message="Please enter your first name!">
+                            </div>
+
+
+
+
+                            <div class="phone-6 columns form-holder">
+                                <input class="form-control required" name="lastName" placeholder="Last Name*"
+                                    title="Last Name" type="text" value="" id="Lastname2"
+                                    data-error-message="Please enter your last name!">
+                            </div>
+                        </div>
+
+                        <div class=" margin-bottom-5">
+                            <div class="phone-12 columns form-holder">
+                                <label>Address:</label>
+                            </div>
+                        </div>
+
+                        <div class="phone-12 columns form-holder">
+                            <input class="form-control required" name="shippingAddress1" placeholder="Address*"
+                                title="Address" type="text" value="" id="Address2"
+                                data-error-message="Please enter your address!">
+                        </div>
+
+                        <div class=" margin-bottom-5 form-holder">
+                            <div class="phone-12 columns">
+                                <label>Zip Code:</label>
+                            </div>
+                        </div>
+
+                        <div class="phone-12 columns form-holder">
+                            <input class="form-control required" name="shippingZip" placeholder="Zip Code*"
+                                title="Zip Code" type="tel" minlength="5" maxlength="5" value=""
+                                oninput="javascript: this.value = this.value.replace(/[^0-9]/g, '');"
+                                data-error-message="Please enter a valid zip code!">
+                        </div>
+
+                        <div class=" margin-bottom-5 form-holder">
+                            <div class="phone-12 columns">
+                                <label>City:</label>
+                            </div>
+                        </div>
+
+                        <div class="phone-12 columns form-holder">
+                            <input class="form-control required" name="shippingAddress1" placeholder="Country*"
+                                title="Address" type="text" value="" id="countyr2"
+                                data-error-message="Please enter your Country!">
+                        </div>
+
+                        <div class="phone-12 columns form-holder">
+                            <label>State:</label>
+                            <input type="text" name="shippingState" class='form-control required' data-field='state'
+                                data-group='1' id='shippingState2' data-default=''
+                                data-error-message="Please select your state!" />
+                        </div>
+
+                        <div class="phone-12 columns form-holder">
+                            <label>City:</label>
+                            <input class="form-control required" name="shippingCity" placeholder="City*" id="City2"
+                                title="City" type="text" value="" data-error-message="Please enter your city!">
+                        </div>
+
+                        <div class=" set">
+                            <div class="phone-12 columns form-holder input2">
+                                <label>Email:</label>
+                                <input class="form-control input2 required" name="email" placeholder="Email*" title="Email"
+                                type="email" value="" id="email2"
+                                data-error-message="Please enter a valid email id!">
+
+                                
+                            </div>
+
+                            <div class="phone-12 columns form-holder input2">
+                                <label>Phone:</label>
+                                <input class="form-control required input2" id="phone2" name="phone" placeholder="Phone Number*"
+                                title="Phone Number" type="tel" value="" maxlength="10"
+                                data-error-message="Please enter a valid contact number!"
+                                oninput="javascript: this.value = this.value.replace(/[^0-9]/g, '');">
+
+                            </div>
+                        </div>
+
+                        <div class="row set">
+
+                            <div class="phone-12 now_on_form columns form-holder">
+                            </div>
+                        </div>
+                        <p class="error2">Fill All inputs</p>
+                        <button class=" loading-btn " id="sent2" type="button">RUSH MY
+                            ORDER</button>
+                    </form>
+                </div>
+
             </section>
 
             <section class="why-is">
@@ -217,7 +336,8 @@
                             <img alt="" src="app/desktop/images/product.png" class="wy-btl">
                         </div>
                         <div class="why-is__side">
-                            <h2 style="text-transform: uppercase;">WHY IS Keto Boost ACV Keto Gummies <span class="down">SO POPULAR
+                            <h2 style="text-transform: uppercase;">WHY IS Keto Boost ACV Keto Gummies <span
+                                    class="down">SO POPULAR
                                     NOW?</span></h2>
                             <p>A recent study published by the Diabetes, Obesity, and Metabolism Journal found
                                 that Keto Boost ACV Keto Gummies supported burning fat for energy instead of
@@ -296,7 +416,8 @@
                     <div class="row scinece_hold">
                         <div class="science__left">
                             <h2 class="science__title">THE SCIENCE OF</h2>
-                            <h2 class="science__subTitle"> KETOSIS<span>(Keto <span class="off">Boost ACV Keto </span> Gummies)</span></h2>
+                            <h2 class="science__subTitle"> KETOSIS<span>(Keto <span class="off">Boost ACV Keto </span>
+                                    Gummies)</span></h2>
                             <p>Ketosis is the state where your body is actually burning fat for energy instead of carbs.
                                 Ketosis is extremely hard to obtain on your own and takes weeks to
                                 accomplish. Keto Boost ACV Keto Gummies actually helps your body achieve ketosis fast
@@ -342,7 +463,7 @@
                             <polygon fill="#f3f3f3" points="200,500 0,500 300,0 500,0"></polygon>
                         </svg>
                     </div>
-                    <h2 style="font-size: 23px;"><span class="siginal_h2" >REAL</span> SUCCESS STORIES</h2>
+                    <h2 style="font-size: 23px;"><span class="siginal_h2">REAL</span> SUCCESS STORIES</h2>
 
                     <div class="single-item Check_Off">
                         <div class="slide__item slide_down row">
@@ -352,12 +473,12 @@
                             <div class="slide__item_right">
                                 <div class="table-cell">
                                     "After watching video after video of keto success stories, I felt hopeful that I
-                                        could actually start losing weight without anything too extreme. When I
-                                        found Keto Boost ACV Keto Gummies online and thought I'd give it a shot. I
-                                        started
-                                        losing weight, I though maybe it was a fluke at first. After my first 10 pounds,
-                                        I
-                                        cried. If you need something to work like me, you won't be let down"
+                                    could actually start losing weight without anything too extreme. When I
+                                    found Keto Boost ACV Keto Gummies online and thought I'd give it a shot. I
+                                    started
+                                    losing weight, I though maybe it was a fluke at first. After my first 10 pounds,
+                                    I
+                                    cried. If you need something to work like me, you won't be let down"
                                     <span>- Ashley R</span>
                                 </div>
                             </div>
@@ -370,11 +491,11 @@
                             <div class="slide__item_right">
                                 <div class="table-cell">
                                     "I've been hearing about Keto Boost ACV Keto Gummies for a while now. My sister
-                                        took
-                                        it and had some amazing success. I thought, if I could just lose
-                                        a few pounds I would feel better about myself. I was shocked to
-                                        say the least when I lost 20lbs in 30 days. Now I tell everyone
-                                        :)"
+                                    took
+                                    it and had some amazing success. I thought, if I could just lose
+                                    a few pounds I would feel better about myself. I was shocked to
+                                    say the least when I lost 20lbs in 30 days. Now I tell everyone
+                                    :)"
                                     <span>- Isabella N</span>
                                 </div>
                             </div>
@@ -387,11 +508,11 @@
                             <div class="slide__item_right">
                                 <div class="table-cell">
                                     "Keto Boost ACV Keto Gummies is by far the best product I've used for ketosis. It
-                                        works and it works well. I am the leanest I have ever been in my
-                                        life. I had my body fat tested before and after and I went from
-                                        a whopping 26% body fat down to 16% in 4 months. I owe a big
-                                        thanks to Keto Boost ACV Keto Gummies for this amazing
-                                        experience."
+                                    works and it works well. I am the leanest I have ever been in my
+                                    life. I had my body fat tested before and after and I went from
+                                    a whopping 26% body fat down to 16% in 4 months. I owe a big
+                                    thanks to Keto Boost ACV Keto Gummies for this amazing
+                                    experience."
                                     <span>- Darin K</span>
                                 </div>
                             </div>
@@ -424,7 +545,7 @@
                             <div class="last-block-bottle">
                                 <img alt="" src="app/desktop/images/product.png">
                             </div>
-                            
+
                             <a class="last-block__btn off" href="javascript:void(0);" onclick="scrollToTop();">
                                 RUSH MY ORDER
                             </a>
