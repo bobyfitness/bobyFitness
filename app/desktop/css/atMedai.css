@@ -138,9 +138,33 @@ font-size: 24px;
 }
 
 
+.last-block{
 
+  display: flex;
+  flex-direction: column;
+}
 
+.last-block__block {
+  display: flex;
+  justify-content: center;
+}
 
+.last-block_left h2{
+
+  font-size: 17px;
+}
+.last-block_left{
+  padding-top: 20%;
+width: 50%;
+}
+.last-block_left h3{
+
+  font-size: 17px;
+}
+
+.last-block_middle{
+  width: 40%;
+}
 
 
 
