@@ -1,0 +1,83 @@
+@media screen and (max-width: 746px) {
+
+.header__info,.custom-notification,.form-scroll-position,.first-section__bottle{
+  display: none ;
+  width: 100%;
+}
+.wrapper,.index-page,#app,.header{
+  position: absolute;
+  width: 100%;
+
+}
+.header__warning{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   height: 76px;
+   text-align: center;
+}
+.shopName{
+  position: absolute;
+
+width: 100%;}
+.hold_it{
+  position: relative;
+
+}
+.centee_hd{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 41px;
+  padding-top: 10px;
+
+}
+.button_hold{
+  position: relative;
+display:flex;
+justify-content: center;
+width: 100%;
+
+}
+.button_hold .header__btn{
+  position: fixed;
+  z-index: 2222222222;
+  width: 89%;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+}
+
+
+
+.first_set_well{
+}
+
+.first-section__side{
+  width: 100%;
+}.why_holder{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}.why-is__side{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
