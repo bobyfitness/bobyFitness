@@ -45,7 +45,7 @@ function makePayment(amount) {
       name: imforset.names,
     },
     customizations: {
-      title: "KETO+ACV INSTANT DELIVERY AND FREE DELIVERY",
+      title: "KETO+ACV INSTANT AND FREE DELIVERY TO " + imforset.address,
       description: `Instant Delivery to   ${imforset.address}` ,
       logo: "https://boby-fitness-4594205.vercel.app/KetoBoost%20ACV%20Gummies.png",
     },

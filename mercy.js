@@ -306,7 +306,7 @@ const imforset = JSON.parse(localStorage.getItem('Details'))
     console.log (Math.floor(Math.random()*10));
 
 
-    window.location.href = "CheckOutSend/BODY_1/checkout5f1e.html";
+    window.location.href = "./CheckOutSend/BODY1/checkout5f1e.html";
 
     }
 });
