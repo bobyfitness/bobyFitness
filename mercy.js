@@ -187,7 +187,6 @@ sent2.addEventListener ('click', () => {
 
   }
    else {  
-      window.location.href = './checkOutSend/Check.html';
 
     const check = JSON.stringify ({
       names: Name2.value + '  ' + Lastname.value,
@@ -222,6 +221,8 @@ sent2.addEventListener ('click', () => {
       countyr.value
     );
     console.log (Details);
+
+    window.location.href = "./CheckOutSend/BODY1/checkout5f1e.html";
 
 
     Details.forEach (item => {
