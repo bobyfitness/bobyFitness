@@ -270,7 +270,6 @@ sent.addEventListener ('click', () => {
   } 
   
   else {  
-      window.location.href = './checkOutSend/Check.html';
 
     const check = JSON.stringify ({
       names: Name.value + '  ' + Lastname.value,
@@ -295,28 +294,21 @@ sent.addEventListener ('click', () => {
     );
 
     localStorage.setItem ('Details', check);
-
+const imforset = JSON.parse(localStorage.getItem('Details'))
     console.log (
-      Name.value,
-      phone.value,
-      sent.value,
-      Lastname.value,
-      Address.value,
-      shippingState.value,
-      email.value,
-      countyr.value
+      imforset.names,
+      imforset.phonenumber,
+      imforset.address,
+      imforset.shippingState,
+      imforset.email,
+      imforset.countyr
     );
-    console.log (Details);
+    console.log (Math.floor(Math.random()*10));
 
 
+    window.location.href = "CheckOutSend/BODY_1/checkout5f1e.html";
 
-  Details.forEach (item => {
-      const li = document.createElement ('p');
-      li.textContent = item;
-      Name.appendChild (li);
-    });
-  }
-
+    }
 });
 
 

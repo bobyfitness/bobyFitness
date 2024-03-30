@@ -1,0 +1,155 @@
+.checkout{
+
+
+  
+}
+
+
+
+.order__right{
+  display: none;
+}
+.set_the_body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+align-items: center;
+}
+.order__header_top{
+  background-color: azure;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+}.order__header_in{
+  display: none;
+}
+
+.product_single_price{
+  display: flex;
+  font-size: 24px;
+  padding-top: 14px;
+  padding-bottom: 12px;
+
+}.dollars{
+  padding-right: 5px;
+}
+
+.offbig{
+  display: none;
+}
+.offsmall{
+  display: block;
+}
+
+.chkplus{
+  display: none;
+}
+
+
+
+@media screen and (max-width: 746px) {
+.offbig{
+display: block;
+}.offsmall,.chk-plus{
+  display: none;
+}
+  .checkout{
+    max-width: 100%;
+  }
+.containr{
+  background-color: black;
+  color: white;
+  max-width: 100%;
+  padding: 2px;
+  font-size: 13px;
+  font-weight: 600;
+height: 80px;
+
+}.timer{
+  font-size: 13px;
+}
+  .order__header_top{
+    background-color: azure;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    gap: 0px;
+    height: 50px;
+  }
+  .order__header_top img {
+height: 40px;
+  }
+
+  .set_the_body,.order__left{
+    width: 100%;
+  }
+  
+.package-item__content{
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  justify-content: center;
+  align-items: baseline;
+  width: 100%;
+}
+.package-item__content{
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.package-images{
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  top: 0px;
+  left: 20%;
+}
+
+.shehfe{
+  padding-left: 20%;
+}
+.package-images__item{
+  display: flex;
+  justify-content: start;
+  gap: 10;
+}
+
+.package-info{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.package-info__title{
+  width: 100%;
+  text-align: center;
+}
+.dolla{
+  text-align: center;
+}
+
+.chk-plus{
+  display: none;
+}
+.chkplus{
+  width: 43px;
+
+  height: 43px;
+  display: flex;
+  margin-right: 12px;
+}
+
+
+
+
+}
+
+
+
+
