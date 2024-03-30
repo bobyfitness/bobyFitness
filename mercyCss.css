@@ -1,0 +1,63 @@
+
+
+.main_hold_site{
+  display: block;
+}
+.table_hold{
+  display: none;
+}
+.topic{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 28px;
+  font-weight: 900;
+  color: rgb(230, 29, 29);
+
+}
+table{
+  text-align: center;
+  width: 100%;
+
+}
+thead{
+  width: 100%;
+
+  font-size: 19px;
+  text-transform: capitalize;
+  background-color: aquamarine;
+}
+thead th{
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+.welcome{
+  position: absolute;
+  text-align: center;
+  right: 0;
+  left: 0;
+  top: 20%;
+  font-size:90px;
+  color: rgb(226, 177, 43);
+  font-style: italic;
+  font-weight: 900;
+  transition: 3s;
+}
+tbody{
+  width: 100%;
+}
+tbody th{
+  margin-top: 10px;
+  text-align: left;
+
+}
+
+tbody th li{
+margin: 10px;
+
+
+}
+tbody th ul{
+
+}

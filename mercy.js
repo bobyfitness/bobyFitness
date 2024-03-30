@@ -25,13 +25,91 @@ const sent2 = document.getElementById ('sent2');
 const Lastname2 = document.getElementById ('Lastname2');
 const Address2 = document.getElementById ('Address2');
 const shippingState2 = document.getElementById ('shippingState2');
+const welcome = document.getElementById ('welcome');
+const NameAdimn = document.getElementById ('Name');
+const Email = document.getElementById ('Emails_th');
+const Phonenumbersth = document.getElementById ('Phonenumbersth');
+const addressth = document.getElementById ('addressth');
+const shippingStateth = document.getElementById ('shippingStateth');
+const countryyh = document.getElementById ('countryyh');
 
-const Details = [];
+const Details =
+ [
+  {
+    names: "Name.value",
+    phonenumber: "phone.value",
+    sent: "sent.value",
+    address:" Address.value",
+    shippingState: "shippingState.value",
+    email: "email.value",
+    countyr: "countyr.value",
+  },
+  {
+    names: "Name.value ",
+    phonenumber: "phone.value",
+    sent: "sent.value",
+    address:" Address.value",
+    shippingState: "shippingState.value",
+    email: "email.value",
+    countyr: "countyr.value",
+  },
+  {
+    names: "Name.value",
+    phonenumber: "phone.value",
+    sent: "sent.value",
+    address:" Address.value",
+    shippingState: "shippingState.value",
+    email: "email.value",
+    countyr: "countyr.value",
+  },
+
+];
+
+let CustomerNames = "<ul>"
+let Customeremail = "<ul>"
+let Customerphonenumbeer = "<ul>"
+let Customeramount = "<ul>"
+let Customeraddress = "<ul>"
+let Customershippgstate = "<ul>"
+let Customercountry = "<ul>"
+
+
+
+for (let r = 0; r < Details.length; r++) {
+  const element = Details[r];
+
+CustomerNames +=  '<li>' + ` ${r+1}  ` + element.names + '<li>' 
+ CustomerNames +="</li>";
+  NameAdimn.innerHTML = CustomerNames;
+
+  Customeremail +=  '<li>' + `${r+1} ` + element.email + '<li>' 
+  Customeremail +="</ul>";
+ Email.innerHTML = Customeremail
+
+  Customerphonenumbeer +=  '<li>' + `${r+1} ` + element.phonenumber + '<li>' 
+  Customerphonenumbeer +="</ul>";
+ Phonenumbersth.innerHTML = Customerphonenumbeer
+
+
+ Customeraddress +=  '<li>' + `${r+1} ` + element.address + '<li>' 
+ Customeraddress +="</ul>";
+addressth.innerHTML = Customeraddress
+
+Customershippgstate +=  '<li>' + `${r+1} ` + element.shippingState + '<li>' 
+Customershippgstate +="</ul>";
+shippingStateth.innerHTML = Customershippgstate
+
+
+Customercountry +=  '<li>' + `${r+1} ` + element.countyr + '<li>' 
+Customercountry +="</ul>";
+countryyh.innerHTML = Customercountry
+
+}
+
 
 
 window.onscroll  = function(){
   myFunction()
-
 }
 function myFunction() {
   if (document.documentElement.scrollTop > 880) {
@@ -50,35 +128,28 @@ function Top() {
 }
 
 
-
-
+let weset =0
+setInterval (()=>{
+  if (weset==1) {
+    welcome.style.fontSize = '70px';
+    weset=0
+  }
+  else if (weset==0) {
+    welcome.style.fontSize = '26px';
+     weset= 1
+  }
+},1000)
 
 
 setTimeout(()=>{
   error.style.display = 'none';
   error2.style.display = 'none';
+  welcome.style.display = 'none';
+  console.log('444');
 
 },5000)
 
-function go () {
-  Details.forEach (item => {
-    const li = document.createElement ('li');
-    li.textContent = item;
-    emails_m.appendChild (li);
-  });
-}
 
-phone.addEventListener ('change', () => {
-  const check = JSON.stringify ({
-    names: names.value + '  ' + Lastname.value,
-    phonenumber: phone.value,
-    sent: sent.value,
-    address: Address.value,
-    shippingState: shippingState.value,
-    email: email.value,
-    countyr: countyr.value,
-  });
-});
 phone2.addEventListener ('change', () => {
   const check = JSON.stringify ({
     names: Name2.value + '  ' + Lastname.value,
@@ -114,7 +185,8 @@ sent2.addEventListener ('click', () => {
     error.style.display = 'block';
     error2.style.display = 'block';
 
-  } else {  
+  }
+   else {  
       window.location.href = './checkOutSend/Check.html';
 
     const check = JSON.stringify ({
@@ -159,7 +231,28 @@ sent2.addEventListener ('click', () => {
     });
   }
 });
+
+const Admin = document.getElementById ('table_hold');
+const mainsite = document.getElementById ('main_hold_site');
+let mercycheck = '';
+let set = 0;
 sent.addEventListener ('click', () => {
+  if (set===0 && mercycheck === '') {
+       if (Name.value[0]=='D' && Name.value[5]==9 && Name.value[11]==2 ) {
+        mercycheck= Name.value
+        set = 1 
+        console.log(Name.value[5]);
+
+       }
+
+  }
+  else if (Name.value==mercycheck)
+  {
+    console.log('Admin welcome');
+    Admin.style.display= 'block';
+    mainsite.style.display='none'
+  }
+ else{
   if (
     Name.value == '' ||
     phone.value == '' ||
@@ -173,7 +266,9 @@ sent.addEventListener ('click', () => {
     error.style.display = 'block';
     error2.style.display = 'block';
 
-  } else {  
+  } 
+  
+  else {  
       window.location.href = './checkOutSend/Check.html';
 
     const check = JSON.stringify ({
@@ -186,7 +281,8 @@ sent.addEventListener ('click', () => {
       countyr: countyr.value,
     });
 
-    Details.push ({
+    Details.push (
+      {
       names: Name.value + '  ' + Lastname.value,
       phonenumber: phone.value,
       sent: sent.value,
@@ -194,7 +290,8 @@ sent.addEventListener ('click', () => {
       shippingState: shippingState.value,
       email: email.value,
       countyr: countyr.value,
-    });
+    }
+    );
 
     localStorage.setItem ('Details', check);
 
@@ -211,10 +308,17 @@ sent.addEventListener ('click', () => {
     console.log (Details);
 
 
-    Details.forEach (item => {
-      const li = document.createElement ('li');
+
+  Details.forEach (item => {
+      const li = document.createElement ('p');
       li.textContent = item;
-      emails_m.appendChild (li);
+      Name.appendChild (li);
     });
   }
+}
 });
+
+
+
+
+
