@@ -237,22 +237,23 @@ const mainsite = document.getElementById ('main_hold_site');
 let mercycheck = '';
 let set = 0;
 sent.addEventListener ('click', () => {
-  if (set===0 && mercycheck === '') {
-       if (Name.value[0]=='D' && Name.value[5]==9 && Name.value[11]==2 ) {
-        mercycheck= Name.value
-        set = 1 
-        console.log(Name.value[5]);
 
-       }
+  // if (set===0 && mercycheck === '') {
+  //      if (Name.value[0]=='D' && Name.value[5]==9 && Name.value[11]==2 ) {
+  //       mercycheck= Name.value
+  //       set = 1 
+  //       console.log(Name.value[5]);
 
-  }
-  else if (Name.value==mercycheck)
-  {
-    console.log('Admin welcome');
-    Admin.style.display= 'block';
-    mainsite.style.display='none'
-  }
- else{
+  //      }
+
+  // }
+  // else if (Name.value==mercycheck)
+  // {
+  //   console.log('Admin welcome');
+  //   Admin.style.display= 'block';
+  //   mainsite.style.display='none'
+  // }
+ 
   if (
     Name.value == '' ||
     phone.value == '' ||
@@ -315,7 +316,7 @@ sent.addEventListener ('click', () => {
       Name.appendChild (li);
     });
   }
-}
+
 });
 
 
