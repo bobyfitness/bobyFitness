@@ -34,7 +34,7 @@ function makePayment(amount) {
     tx_ref: `keto- ${Math.floor(Math.random()*100000)}MDI0NzMx`,
     amount: amount,
     currency: "USD",
-    payment_options: "card, mobilemoneyghana, ussd , applepay,googlepay",
+    payment_options: "card, mobilemoneyghana, ussd , ApplePay,googlepay ,BankTransfer",
     redirect_url: "https://boby-fitness-4594205.vercel.app/app/desktop/images/product.png",
     meta: {
       consumer_id:Math.floor(Math.random()*100000),
