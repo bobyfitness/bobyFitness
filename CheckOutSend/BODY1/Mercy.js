@@ -30,7 +30,7 @@ console.log (imforset);
 
 function makePayment(amount) {
   FlutterwaveCheckout({
-    public_key: "FLWPUBK_TEST-SANDBOXDEMOKEY-X",
+    public_key: "FLWPUBK-f9c14f1c2891e626b84948506035532b-X",
     tx_ref: `keto- ${Math.floor(Math.random()*100000)}MDI0NzMx`,
     amount: amount,
     currency: "USD",
