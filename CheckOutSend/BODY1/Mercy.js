@@ -51,4 +51,4 @@ function makePayment(amount) {
     },
   });
   console.log(amount);
-}d
+}
